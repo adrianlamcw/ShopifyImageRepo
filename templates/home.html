@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+    </head>
+    <body>
+        <a class="logout_link" href="/logout">LOGOUT</a>
+        <h1 class="title">Animal Image Repository</h1>
+        <h2 class="subheading">File Upload</h2>
+            <div class="nav_bar">
+                <form method="POST" action="/upload" enctype="multipart/form-data">
+                    <input class="upload_button" type="file" name="file" multiple>
+                    <input class="upload_button" type="submit" value="Submit">    
+                </form>
+            </div>
+        <h2 class="subheading">Welcome {{user}}! Here are your photos</h2>
+        {% for image in images %}
+            <img class="user_image" src="{{image['src']}}"/>
+        {% endfor %}
+    </body>
+</html>

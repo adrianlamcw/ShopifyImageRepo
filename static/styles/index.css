@@ -1,0 +1,81 @@
+html {
+    background: url(/static/images/forest_backdrop.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 7%;
+    font-size: 50px;
+}
+
+.subheading {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.input {
+    height: 30px;
+    font-size: 14pt;
+    margin-left: 35%;
+    width: 225px;
+}
+
+.text_field {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.enter_button {
+    width: 150px;
+    margin-left: 45%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.error {
+    color: tomato;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.user_image {
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px
+}
+
+.nav_bar {
+    width: 500px;
+    height: 50px;
+    border: 2px;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upload_button {
+    margin: 15px;
+}
+
+.logout_link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}

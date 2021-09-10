@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+    </head>
+    <body>
+        <h1 class="title">Animal Image Repository</h1>
+        <h2 class="subheading">Login</h2>
+        <form action="/login" method="post">
+            <div class="text_field">
+                <input class="input" type="text" placeholder="Username" name="username" value="{{ request.form.username }}">
+            </div>
+            <div class="text_field">
+                <input class="input" type="password" placeholder="Password" name="password" value="{{ request.form.password }}">
+            </div>
+            <input class="enter_button" type="submit" value="Login">
+        </form>
+        {% if error %}
+            <p class="error"><strong>Error:</strong> {{ error }}
+        {% endif %}
+    </body>
+</html>
