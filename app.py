@@ -1,4 +1,4 @@
-from flask import Flask, flash, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for
 from passlib.hash import sha256_crypt
 import sqlite3
 from sqlite3 import Error
